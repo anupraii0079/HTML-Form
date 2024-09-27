@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Personal Information</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #8ddb9a;
+        }
+        form{
+            width:400px;
+            background-color: #d8d2e6;
+            padding:20px;
+            border-radius: 8px;
+            box-shadow:0 0 10px rgb(150, 015, 150,1.0);
+        }
+        fieldset{
+            border:3px solid black;
+            padding:10px;
+            margin:5px;
+        }
+        legend{
+            display: block;
+            margin-bottom:5px;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"]{
+            width: calc(100% - 20px);
+            padding:9px;
+            margin-bottom: 10px;
+            border:1px solid #ccc;
+            border-radius: 14px;
+        }
+        input[type="radio"]{
+            margin-left:20px;
+        }
+        input[type="submit"]{
+            padding:10px 20px;
+            border-radius: 14px;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                User Personal Information
+            </legend>
+            <label for="username">Enter your full name</label>
+            <input type="text" name="name" >
+            <label for="email">Enter your email</label>
+            <input type="email" name="email">
+            <label for="password">Enter your password</label>
+            <input type="password" name="password">
+            <label for="password">Confirm your password</label>
+            <input type="password" name="password">
+            <label for="gender">Enter your gender</label>
+            <input type="radio" name="male">Male 
+            <input type="radio" name="female">Female 
+            <input type="radio" name="other">Others 
+            <label for="dob">Enter your Date of birth</label>
+            <input type="date" name="dob">
+            <label for="address">Enter your address</label>
+            <textarea name="address"></textarea>
+            <input type="submit" name="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
